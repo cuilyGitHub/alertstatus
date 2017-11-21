@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="format-detection" content="telephone=no" />
+    <!--flexible-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <script src="flexible.min.js"></script>
+    <!---->
+    <link rel="stylesheet" href="alertstatus.css">
+    <script src="alertstatus.js"></script>
+    <title>报警状态一览</title>
+</head>
+<body>
+    <div class="table-box">
+        <table class="table">
+            <thead>
+                <tr class="head">
+                    <td class="small">停</td>
+                    <td class="small">驶</td>
+                    <td class="small">有效时长</td>
+                    <td class="long">报警状态描述</td>
+                </tr>
+            </thead>
+            <tbody id="immediately"></tbody>
+        </table>
+        <table class="table">
+            <thead>
+                 <tr class="head">
+                     <td class="float" colspan="4">浮动类计算报警</td>
+                 </tr>
+                 <tr class="head">
+                     <td class="small">停</td>
+                     <td class="small">驶</td>
+                     <td class="small">有效时长</td>
+                     <td class="long">报警状态描述</td>
+                </tr>
+            </thead>
+            <tbody id="float"></tbody>
+        </table>
+    </div>
+    <div class="des">
+        <p>报警状态从上而下优先级递减</p>
+        <ul>
+            <li>1.例如：当车辆触发电子围栏。1小时内再次触发超速，则当前状态显示电子围栏报警。超过1小时，同时超速的报警还在有效期将显示超速。警告有效过期后，状态将显示停或者驶。</li>
+            <li>2.停：指车辆ACC熄火、设备通讯间断超过10分钟等设备不发生位移。</li>
+            <li>3.驶：指设置发生位移。</li>
+        </ul>
+    </div>
+</body>
+</html>

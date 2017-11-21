@@ -1,0 +1,102 @@
+﻿{
+    "immediatelyData": [
+        {
+            "name": "盗抢（震动）",
+            "expireAfter": "24",
+            "description": "车辆发生震动，触发报警",
+            "type": "stop"
+        },
+        {
+            "name": "强拆",
+            "expireAfter": "24",
+            "description": "设备被强行从绑定物上移除（光线）",
+            "type": "stop"
+        },
+        {
+            "name": "断电",
+            "expireAfter": "24",
+            "description": "适用于插电设备，被强行拆线。设备可以继续通讯的硬件设备",
+            "type": "stop"
+        },
+        {
+            "name": "区域围栏（出）",
+            "expireAfter": "1",
+            "description": "车辆驶出某一个区域围栏",
+            "type": "all"
+        },
+        {
+            "name": "区域围栏（进）",
+            "expireAfter": "1",
+            "description": "车辆进入某一个区域围栏",
+            "type": "all"
+        },
+        {
+            "name": "电子围栏（出）",
+            "expireAfter": "1",
+            "description": "车辆进出某一个电子围栏",
+            "type": "all"
+        },
+        {
+            "name": "电子围栏（进）",
+            "expireAfter": "1",
+            "description": "车辆进入某一个电子围栏",
+            "type": "all"
+        },
+        {
+            "name": "ACC启动警",
+            "expireAfter": "1",
+            "description": "ACC启动报警",
+            "type": "stop"
+        },
+        {
+            "name": "ACC熄火警",
+            "expireAfter": "1",
+            "description": "ACC熄火报警",
+            "type": "driver"
+        },
+        {
+            "name": "超速",
+            "expireAfter": "0.5",
+            "description": "车辆行驶速度大于设定的阈值",
+            "type": "driver"
+        },
+        {
+            "name": "低电量",
+            "expireAfter": "9",
+            "description": "适用于长电设备。电磁电量低于20%，触发。每天一次",
+            "type": "all"
+        }
+    ],
+    "floatData": [
+        {
+            "name": "停留(预警）",
+            "expireAfter": "0",
+            "description": "统计界面、设备管理显示，不触发报警",
+            "type": "stop"
+        },
+        {
+            "name": "停留(警告)",
+            "expireAfter": "24",
+            "description": "触发报警。",
+            "type": "stop"
+        },
+        {
+            "name": "停留(报警)",
+            "expireAfter": "24",
+            "description": "触发报警。",
+            "type": "stop"
+        },
+        {
+            "name": "通讯中断",
+            "expireAfter": "1",
+            "description": "适用于插电设备。设备使用状态下、回传数据频率超过10个单位。例：频率10S，当回传数据延时100S的时候，进行报警。有效期后依然中断、变更为离线。",
+            "type": "driver"
+        },
+        {
+            "name": "停机、离线",
+            "expireAfter": "720",
+            "description": "当设备SIM欠费、设备故障等原因造成设备长期和服务通讯断开。长电设备通讯中断时长24小时，视为触发报警",
+            "type": "stop"
+        }
+    ]
+}
