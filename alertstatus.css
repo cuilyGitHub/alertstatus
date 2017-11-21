@@ -137,6 +137,18 @@ table td {
   word-break: break-all;
   word-wrap: break-word;
 }
+@media screen and (min-width: 420px) {
+  html,
+  body {
+    font-size: 36px !important;
+  }
+  .table-box,
+  .des {
+    max-width: 414px !important;
+    position: relative;
+    margin: 20px auto !important;
+  }
+}
 /*less 基础样式*/
 .normal-font {
   font-size: 0.35rem;
