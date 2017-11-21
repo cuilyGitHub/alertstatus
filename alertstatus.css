@@ -140,11 +140,11 @@ table td {
 @media screen and (min-width: 420px) {
   html,
   body {
-    font-size: 36px !important;
+    font-size: 50px !important;
   }
   .table-box,
   .des {
-    max-width: 414px !important;
+    max-width: 500px !important;
     position: relative;
     margin: 20px auto !important;
   }
